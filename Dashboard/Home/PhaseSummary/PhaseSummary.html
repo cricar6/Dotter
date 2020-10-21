@@ -1,0 +1,28 @@
+<h5>PhaseSummary</h5>
+
+<div class="phase-summary">
+    <h2 class="general-title"><span>Resultados de prueba</span></h2>
+    <div class="phase-summary__item">
+        <h3 class="title-text"><span>Tiempo por prueba:</span></h3>
+        <p class="content-text"><span id="summary__time"></span></p> 
+        <h3 class="title-text"><span>Errores totales:</span></h3>
+        <p class="content-text"><span id="summary__total-error"></span></p>
+    </div>
+
+    <div class="phase-testing__errors-container">
+        <h2 class="title-text"><span>Errores por pieza:</span></h2>
+        <div class="phase-testing__errors-container__errors-content errors-summary">
+
+        </div>
+    </div>
+    <div class="additional-content">
+        <p>¿Tuviste alguna dificultad?</p>
+        <textarea name="" id="additional-info-input" cols="30" rows="10"></textarea>
+    </div>
+
+    <button onclick="finishSummary()">
+        Terminar revisión
+    </button>
+</div>
+
+<script src="../../Dashboard/Home/PhaseSummary/web/js/phasesummary.js"></script>

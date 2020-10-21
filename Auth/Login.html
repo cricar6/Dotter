@@ -1,0 +1,30 @@
+<div class="auth">
+    <div class="auth__container">
+        <div class="auth__container__content">
+            <div class="logo">
+                <img class="logo__image" src="./web/assets/logo.png" name="dotter" alt="">
+            </div>
+            <div class="auth-form">
+                <div class="control">
+                    <input type="text" placeholder="Correo" name="email" id="logEmail">
+                </div>
+                <div class="control">
+                    <input type="password" placeholder="******" name="password" id="logPass">
+                </div>
+
+                <button onclick="executeLogin()" type="submit">
+                    Iniciar sesión
+                </button>
+
+                <div class="bottom-note">
+                    <p>¿No tienes cuenta? </p>
+                    <button onclick="passToSignIn()">
+                        Regístrate
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../../Auth/web/js/login.js"></script>
