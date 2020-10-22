@@ -59,7 +59,10 @@ function finishTest () {
     (seconds < 10) ? secondString = '0' + seconds : secondString = seconds;
     (minutes < 10) ? minuteString = '0' + minutes : minuteString = minutes;
 
-    this.phaseData.time = minuteString + ":" + secondString + ":" + msString;
+
+    this.phaseData.time.ms = msString;
+    this.phaseData.time.s = secondString;
+    this.phaseData.time.m = minuteString;
 
     timer.reset();
     timer.stop();

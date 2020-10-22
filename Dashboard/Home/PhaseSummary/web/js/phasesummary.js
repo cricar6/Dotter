@@ -1,4 +1,4 @@
-$("#summary__time").html(this.phaseData.time);
+$("#summary__time").html(this.phaseData.time.m + ":" + this.phaseData.time.s + ":" + this.phaseData.time.ms);
 
 this.phaseData.errorCounter.forEach(element => {
     totalErrors.push(element.qty);
@@ -36,5 +36,11 @@ setSummaryErrors(this.phaseData.errorCounter);
 function finishSummary () {
     let additionalInfo = $("#additional-info-input").val();
     this.phaseData.additionalInput = additionalInfo;
-    console.log (this.phaseData)
+
+    let userId = firebase.auth().currentUser.uid;
+    let phaseData = this.phaseData;
+
+    writePhase(userId, phaseData);
+    $(".main-nav-container").load("../../Dashboard/Statistics/Statistics.html");
+    $(".main-nav").show();
 }

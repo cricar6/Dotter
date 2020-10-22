@@ -25,7 +25,7 @@ function setPhaseData(currentPhase) {
             this.phaseData = {
                 name: "Primera etapa",
                 description: "Primera etapa proident laboris enim laboris magna deserunt do laborum. Exercitation sunt voluptate ullamco reprehenderit adipisicing ea aliqua.",
-                time: "",
+                time: { ms: 0, s: 0, m: 0 },
                 errorCounter: 
                 [
                     { name: "ErrorA", qty: 0 },
@@ -40,7 +40,7 @@ function setPhaseData(currentPhase) {
             this.phaseData = {
                 name: "Segunda etapa",
                 description: "Segunda etapa proident laboris enim laboris magna deserunt do laborum. Exercitation sunt voluptate ullamco reprehenderit adipisicing ea aliqua.",
-                time: "",
+                time: { ms: 0, s: 0, m: 0 },
                 errorCounter: 
                 [
                     { name: "ErrorA", qty: 0 },
@@ -56,7 +56,7 @@ function setPhaseData(currentPhase) {
             this.phaseData = {
                 name: "Tercera etapa",
                 description: "Tercera etapa proident laboris enim laboris magna deserunt do laborum. Exercitation sunt voluptate ullamco reprehenderit adipisicing ea aliqua.",
-                time: "",
+                time: { ms: 0, s: 0, m: 0 },
                 errorCounter: 
                 [
                     { name: "ErrorA", qty: 0 },
@@ -79,7 +79,7 @@ function setPhaseData(currentPhase) {
             this.phaseData = {
                 name: "",
                 description: "",
-                time: "",
+                time: { ms: 0, s: 0, m: 0 },
                 errorCounter: [],
                 additionalInput: ""
             }

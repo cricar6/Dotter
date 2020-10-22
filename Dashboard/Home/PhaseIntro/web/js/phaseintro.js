@@ -1,13 +1,13 @@
 $("#phaseIntroName").html(this.phaseData.name);
 $("#phaseIntroDescription").html(this.phaseData.description);
 
-function goBackToHome () {
+function goBackToHome() {
     this.currentPhase = 0;
 
     this.phaseData = {
         name: "",
         description: "",
-        time: "",
+        time: { ms: 0, s: 0, m: 0 },
         errorCounter: [],
         additionalInput: ""
     }

@@ -3,7 +3,7 @@ let currentPhase = '0';
 let phaseData = {
     name: "",
     description: "",
-    time: "",
+    time: { ms: 0, s: 0, m: 0 },
     errorCounter: [],
     totalErrors: 0,
     additionalInput: ""
