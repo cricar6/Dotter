@@ -1,5 +1,4 @@
-let signName;
-let signPhotoUrl;
+
 
 function asignAvatar(avatarId) {
     switch (avatarId) {
@@ -45,3 +44,16 @@ function executeSignIn() {
 function passToLogin() {
     $(".container").load("../../Auth/Login.html");
 }
+
+function avatarListeners () {
+    document.querySelectorAll(".avatar-container .avatar").forEach(element => {
+        element.addEventListener("click", () => {
+            document.querySelectorAll(".avatar-container .avatar").forEach(element => {
+                element.classList.remove('active');
+            });
+            element.classList.add('active');
+        });
+    });
+}
+
+avatarListeners();

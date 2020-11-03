@@ -28,7 +28,9 @@ function logUser(email, password) {
         let errorCode = error.code;
         let errorMessage = error.message;
 
-        console.log(errorCode, errorMessage);
+        $("#loginError").html(errorMessage);
+
+        console.log(errorCode, errorMessage, "HOLA");
     });
 }
 
@@ -49,8 +51,10 @@ firebase.auth().onAuthStateChanged(function (user) {
         user = firebase.auth().currentUser;
         console.log("You are now logged with: ", user.uid);
         $(".container").load("../../Dashboard/Dashboard.html")
-        
     } else {
         console.log("You are not logged right now")
     }
 });
+
+let signName;
+let signPhotoUrl;

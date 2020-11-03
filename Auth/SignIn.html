@@ -1,35 +1,56 @@
-<h2>Sign In</h2>
-
-<button onclick="asignAvatar('1')">
-    1
-</button>
-<button onclick="asignAvatar('2')">
-    2
-</button>
-<button onclick="asignAvatar('3')">
-    3
-</button>
-<button onclick="asignAvatar('4')">
-    4
-</button>
-<button onclick="asignAvatar('5')">
-    5
-</button>
-<button onclick="asignAvatar('6')">
-    6
-</button>
-
-
-<input type="text" placeholder="Usuario" name="email" id="signEmail">
-<input type="password" placeholder="******" name="password" id="signPass">
-<input type="text" placeholder="Aleku" name="name" id="signName">
-
-<button onclick="executeSignIn()">
-    Sign In
-</button>
-
-<button onclick="passToLogin()">
-    Login
-</button>
-
+<div class="auth signin-auth">
+    <div class="auth__container">
+        <div class="auth__container__content">
+            <div class="logo">
+                <img class="logo__image" src="./web/assets/logo.png" name="dotter" alt="">
+            </div>
+            <div class="auth-form">
+                <p>Elige tu avatar</p>
+                <div class="avatar-container">
+                    <button onclick="asignAvatar('1')" class="avatar" style="background-image: url(https://randomuser.me/api/portraits/women/89.jpg);">
+                        
+                    </button>
+                    <button onclick="asignAvatar('2')" class="avatar" style="background-image: url(https://randomuser.me/api/portraits/women/38.jpg);">
+                        
+                    </button>
+                    <button onclick="asignAvatar('3')" class="avatar" style="background-image: url(https://randomuser.me/api/portraits/women/53.jpg);">
+                        
+                    </button>
+                    <button onclick="asignAvatar('4')" class="avatar" style="background-image: url(https://randomuser.me/api/portraits/women/66.jpg);">
+                        
+                    </button>
+                    <button onclick="asignAvatar('5')" class="avatar" style="background-image: url(https://randomuser.me/api/portraits/women/7.jpg);">
+                        
+                    </button>
+                    <button onclick="asignAvatar('6')" class="avatar" style="background-image: url(https://randomuser.me/api/portraits/women/5.jpg);">
+                        
+                    </button>
+                </div>
+                <div class="control input--text">
+                    <input type="text" placeholder="Nombre" name="name" id="signName">
+                    <p class="input--text__label">Nombre</p>
+                </div>
+                <div class="control input--text">
+                    <input type="text" placeholder="Correo electrónico" name="email" id="signEmail">
+                    <p class="input--text__label">Correo electrónico</p>
+                </div>
+                <div class="control input--text">
+                    <input type="password" placeholder="******" name="password" id="signPass">
+                    <p class="input--text__label">Contraseña</p>
+                </div>
+                <div class="error-container" id="loginError"></div>
+                
+                <button onclick="executeSignIn()" type="submit" class="button button--primary">
+                    Registrarse
+                </button>
+                <div class="bottom-note">
+                    <p>Ya tienes cuenta? </p>
+                    <button onclick="passToLogin()">
+                        Inicia sesión
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <script src="../../Auth/web/js/signin.js"></script>

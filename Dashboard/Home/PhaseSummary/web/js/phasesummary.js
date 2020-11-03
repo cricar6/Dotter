@@ -41,6 +41,14 @@ function finishSummary () {
     let phaseData = this.phaseData;
 
     writePhase(userId, phaseData);
+    if (phaseData.name == "Primera etapa") {
+        currentPhase = '1';
+    } else if (phaseData.name == "Segunda etapa") {
+        currentPhase = '2';
+    } else if (phaseData.name == "Tercera etapa") {
+        currentPhase = '3';
+    }
+
     $(".main-nav-container").load("../../Dashboard/Statistics/Statistics.html");
     $(".main-nav").show();
 }

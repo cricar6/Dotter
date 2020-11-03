@@ -1,0 +1,115 @@
+.auth {
+  width: 100%;
+  height: 100%;
+  background-image: url(../assets/auth_background.jpg);
+  background-position-x: center;
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.auth__container {
+  width: 100%;
+  height: 70%;
+  background: white;
+  position: relative;
+}
+
+.auth__container:after {
+  content: '';
+  background: white;
+  width: 100%;
+  height: 125px;
+  position: absolute;
+  -webkit-clip-path: ellipse(37% 100% at 50% 0%);
+          clip-path: ellipse(37% 100% at 50% 0%);
+  bottom: -125px;
+  -webkit-transform: scaleX(1.5);
+          transform: scaleX(1.5);
+}
+
+.auth__container__content {
+  padding: 0 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: auto;
+}
+
+.auth__container__content .logo {
+  margin: 40px 0;
+  height: 170px;
+}
+
+.auth__container__content .logo img {
+  height: 100%;
+}
+
+.auth__container__content .auth-form {
+  width: 100%;
+}
+
+.auth__container__content .input--text {
+  margin-bottom: 20px;
+}
+
+.avatar-container {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  border: 1px solid #E4DBDB;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 7px;
+}
+
+.avatar-container .avatar {
+  width: 50px;
+  height: 50px;
+  margin: 15px 25px;
+  border-radius: 50px;
+  -webkit-box-shadow: 0px 0px 1px rgba(40, 41, 61, 0.04), 0px 2px 4px rgba(96, 97, 112, 0.16);
+          box-shadow: 0px 0px 1px rgba(40, 41, 61, 0.04), 0px 2px 4px rgba(96, 97, 112, 0.16);
+  background-size: cover;
+  border: 2px solid transparent;
+}
+
+.avatar-container .avatar:hover, .avatar-container .avatar:focus, .avatar-container .avatar:active {
+  -webkit-box-shadow: inset 0px 0.5px 4px rgba(96, 97, 112, 0.32);
+          box-shadow: inset 0px 0.5px 4px rgba(96, 97, 112, 0.32);
+}
+
+.avatar-container .avatar.active {
+  border-color: #5DD6DE;
+}
+
+.signin-auth .logo {
+  height: 90px;
+  margin: 20px 0 30px;
+}
+
+.signin-auth .auth__container {
+  height: 85%;
+}
+
+.signin-auth .auth-form > p {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: gray;
+}
+/*# sourceMappingURL=auth.css.map */

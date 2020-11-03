@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+p,
+input {
+  font-family: 'Poppins', sans-serif;
+}
+
+div#loginError {
+  color: #B71212;
+  font-family: 'Poppins';
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.input--text {
+  position: relative;
+  margin-top: 35px;
+}
+
+.input--text input {
+  width: 100%;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 50px;
+  color: #707070;
+  background: #D4E0EF;
+  font-size: 14px;
+  outline: none;
+}
+
+.input--text input:focus, .input--text input:active {
+  outline: none;
+}
+
+.input--text input:hover, .input--text input:focus {
+  -webkit-box-shadow: inset 0px 0.5px 4px rgba(96, 97, 112, 0.32);
+          box-shadow: inset 0px 0.5px 4px rgba(96, 97, 112, 0.32);
+}
+
+.input--text input:placeholder-shown + p {
+  opacity: 0;
+}
+
+.input--text input + p {
+  position: absolute;
+  top: -25px;
+  left: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #707070;
+  -webkit-transition: .2s ease opacity;
+  transition: .2s ease opacity;
+}
+
+.input--text input:-webkit-autofill {
+  font-family: 'Poppins', sans-serif;
+}
+
+button {
+  border: none;
+  background: transparent;
+}
+
+button:focus, button:active {
+  outline: none;
+}
+
+.button {
+  width: 100%;
+  padding: 15px 30px;
+  border-radius: 50px;
+  border: none;
+  -webkit-transition: -webkit-box-shadow .3s ease;
+  transition: -webkit-box-shadow .3s ease;
+  transition: box-shadow .3s ease;
+  transition: box-shadow .3s ease, -webkit-box-shadow .3s ease;
+  font-family: Lato;
+  font-weight: bold;
+  font-size: 18px;
+  color: #FFFFFF;
+  -webkit-box-shadow: 0px 0px 1px rgba(40, 41, 61, 0.04), 0px 2px 4px rgba(96, 97, 112, 0.16);
+          box-shadow: 0px 0px 1px rgba(40, 41, 61, 0.04), 0px 2px 4px rgba(96, 97, 112, 0.16);
+}
+
+.button.button--primary {
+  background: #5DD6DE;
+}
+
+.button.button--cancel {
+  background: #F58080;
+}
+
+.button:hover, .button:focus, .button:active {
+  -webkit-box-shadow: inset 0px 0.5px 4px rgba(96, 97, 112, 0.32);
+          box-shadow: inset 0px 0.5px 4px rgba(96, 97, 112, 0.32);
+}
+
+.bottom-note {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.bottom-note * {
+  font-size: 14px;
+  background: none;
+  border: none;
+  font-family: 'Lato';
+}
+
+.bottom-note p {
+  color: #34405F;
+}
+
+.bottom-note button {
+  margin-left: 20px;
+  color: #5DD6DE;
+  margin-left: 5px;
+  padding: 15px 0;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.main-nav {
+  width: 100%;
+  padding: 5px 0 20px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px -1px 8px rgba(31, 57, 96, 0.1);
+          box-shadow: 0px -1px 8px rgba(31, 57, 96, 0.1);
+  background: #fff;
+  position: absolute;
+  bottom: 0;
+}
+
+.main-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.main-nav ul li {
+  list-style: none;
+}
+
+.main-nav ul li button {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+}
+
+.main-nav ul li button img {
+  position: absolute;
+  top: 7px;
+  left: 7px;
+}
+
+.main-nav ul li button .nav-placeholder {
+  opacity: 0;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.main-nav ul li button.active .nav-placeholder {
+  opacity: 1;
+}
+
+.main-nav-container {
+  height: calc(100vh - 70px);
+  width: 100%;
+}
+/*# sourceMappingURL=components.css.map */

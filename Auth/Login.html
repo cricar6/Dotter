@@ -5,14 +5,16 @@
                 <img class="logo__image" src="./web/assets/logo.png" name="dotter" alt="">
             </div>
             <div class="auth-form">
-                <div class="control">
+                <div class="control input--text">
                     <input type="text" placeholder="Correo" name="email" id="logEmail">
+                    <p class="input--text__label">Correo</p>
                 </div>
-                <div class="control">
+                <div class="control input--text">
                     <input type="password" placeholder="******" name="password" id="logPass">
+                    <p class="input--text__label">Contraseña</p>
                 </div>
-
-                <button onclick="executeLogin()" type="submit">
+                <div class="error-container" id="loginError"></div>
+                <button onclick="executeLogin()" type="submit" class="button button--primary">
                     Iniciar sesión
                 </button>
 
