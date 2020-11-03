@@ -21,5 +21,6 @@ function startTest() {
 
 function cancelTest() {
     $(".main-nav-container").load("../../Dashboard/Home/PhaseIntro/PhaseIntro.html");
+    $(".main-nav").show();
     clearInterval(interval);
 }

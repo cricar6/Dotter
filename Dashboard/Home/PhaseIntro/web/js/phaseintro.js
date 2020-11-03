@@ -1,5 +1,6 @@
 $("#phaseIntroName").html(this.phaseData.name);
 $("#phaseIntroDescription").html(this.phaseData.description);
+$("#phaseIntroImage").attr("src",this.phaseData.image);
 
 function goBackToHome() {
     this.currentPhase = 0;
@@ -7,13 +8,14 @@ function goBackToHome() {
     this.phaseData = {
         name: "",
         description: "",
+        image: "",
         time: { ms: 0, s: 0, m: 0 },
         errorCounter: [],
         additionalInput: ""
     }
 
     $(".main-nav-container").load("../../Dashboard/Home/Home.html");
-    $(".main-nav").show();
+    $(".main-nav").hide();
 }
 
 function continueToTest() {

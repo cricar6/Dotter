@@ -10,8 +10,6 @@ function setPhase(currentPhase) {
     setPhaseData(currentPhase);
 
     $(".main-nav-container").load("../../Dashboard/Home/PhaseIntro/PhaseIntro.html");
-    $(".main-nav").hide();
-
 }
 
 function setCurrentPhase(currentPhase) {
@@ -25,6 +23,7 @@ function setPhaseData(currentPhase) {
             this.phaseData = {
                 name: "Primera etapa",
                 description: "Primera etapa proident laboris enim laboris magna deserunt do laborum. Exercitation sunt voluptate ullamco reprehenderit adipisicing ea aliqua.",
+                image: "./Dashboard/Home/PhaseIntro/web/img/phase-background-1.png",
                 time: { ms: 0, s: 0, m: 0 },
                 errorCounter: 
                 [
@@ -40,6 +39,7 @@ function setPhaseData(currentPhase) {
             this.phaseData = {
                 name: "Segunda etapa",
                 description: "Segunda etapa proident laboris enim laboris magna deserunt do laborum. Exercitation sunt voluptate ullamco reprehenderit adipisicing ea aliqua.",
+                image: "./Dashboard/Home/PhaseIntro/web/img/phase-background-2.png",
                 time: { ms: 0, s: 0, m: 0 },
                 errorCounter: 
                 [
@@ -56,6 +56,7 @@ function setPhaseData(currentPhase) {
             this.phaseData = {
                 name: "Tercera etapa",
                 description: "Tercera etapa proident laboris enim laboris magna deserunt do laborum. Exercitation sunt voluptate ullamco reprehenderit adipisicing ea aliqua.",
+                image: "./Dashboard/Home/PhaseIntro/web/img/phase-background-3.png",
                 time: { ms: 0, s: 0, m: 0 },
                 errorCounter: 
                 [

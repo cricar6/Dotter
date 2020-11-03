@@ -32,6 +32,10 @@
   font-size: 14px;
 }
 
+.home-tab__intro img {
+  border-radius: 100px;
+}
+
 .home-tab__phases {
   -webkit-box-flex: 1;
       -ms-flex: 1;

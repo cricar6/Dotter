@@ -1,0 +1,58 @@
+.phase-intro-container {
+  background: linear-gradient(27.66deg, rgba(126, 200, 227, 0.7) -25.25%, rgba(126, 200, 227, 0.327808) 28.61%, rgba(126, 200, 227, 0) 130.06%);
+  border-radius: 35px 35px 0px 0px;
+  height: 100%;
+  width: 100%;
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.phase-intro-container__return {
+  padding-top: 20px;
+}
+
+.phase-intro-container__return button {
+  padding: 20px;
+}
+
+.phase-intro-container__content {
+  padding: 20px;
+}
+
+.phase-intro-container__content img {
+  width: 100%;
+}
+
+.phase-intro-container__content__text {
+  text-align: center;
+}
+
+.phase-intro-container__content__text h6 {
+  font-family: Poppins;
+  font-weight: bold;
+  font-size: 24px;
+  color: #1F3960;
+  margin-top: 60px;
+}
+
+.phase-intro-container__content__text p {
+  font-family: Lato;
+  font-weight: 300;
+  font-size: 15px;
+  color: #000000;
+  margin-top: 30px;
+}
+
+.phase-intro-container__pass {
+  padding: 20px 20px 60px;
+}
+/*# sourceMappingURL=phases.css.map */
