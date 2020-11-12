@@ -10,13 +10,13 @@ isOnTest = true;
 $("#phaseTimerToogler").click(() => {
     if (paused) {
         timer.play();
-        $("#phaseTimerToogler").html("Pausar tiempo");
+        $("#phaseTimerToogler").html("Pausar simulación");
         $("#phaseTimerToogler").removeClass("paused");
         paused = false;
         isOnTest = true;
     } else {
         timer.pause();
-        $("#phaseTimerToogler").html("Reanudar tiempo");
+        $("#phaseTimerToogler").html("Reanudar simulación");
         $("#phaseTimerToogler").addClass("paused");
         isOnTest = false;
         paused = true;
@@ -32,11 +32,13 @@ function updateCounters(counters) {
         let errorContainer = document.createElement("div");
 
         let errorTitleContainer = document.createElement("div");
+        errorTitleContainer.classList.add("errorTitleContainer");
         let errorTitle = document.createElement("p");
         errorTitleContainer.append(errorTitle);
         errorTitle.innerHTML = counter.name;
 
         let errorQtyContainer = document.createElement("div");
+        errorQtyContainer.classList.add("errorQtyContainer");
         let errorQty = document.createElement("p");
         errorQtyContainer.append(errorQty);
         errorQty.innerHTML = counter.qty;

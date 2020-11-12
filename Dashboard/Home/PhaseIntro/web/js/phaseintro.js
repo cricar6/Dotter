@@ -15,9 +15,13 @@ function goBackToHome() {
     }
 
     $(".main-nav-container").load("../../Dashboard/Home/Home.html");
-    $(".main-nav").hide();
+    $(".main-nav").show();
+
+    
 }
 
 function continueToTest() {
     $(".main-nav-container").load("../../Dashboard/Home/PhaseTimer/PhaseTimer.html");
+    $(".main-nav").hide();
+
 }

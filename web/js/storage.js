@@ -35,6 +35,8 @@ function updateBestResults(userId, phaseId) {
         firebase.database().ref('users/' + userId + '/phase1' + '/simulations')
             .once('value')
             .then(function (snapshot) {
+                console.log(userId)
+
                 simulations = snapshot.val();
             }).then(() => {
                 window.localStorage.setItem('phase1Data', JSON.stringify(simulations));

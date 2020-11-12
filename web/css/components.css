@@ -98,6 +98,10 @@ button:focus, button:active {
   background: #F58080;
 }
 
+.button.button--disabled {
+  background: #D4E1EF;
+}
+
 .button:hover, .button:focus, .button:active {
   -webkit-box-shadow: inset 0px 0.5px 4px rgba(96, 97, 112, 0.32);
           box-shadow: inset 0px 0.5px 4px rgba(96, 97, 112, 0.32);

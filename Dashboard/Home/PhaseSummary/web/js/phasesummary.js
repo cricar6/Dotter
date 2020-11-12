@@ -15,11 +15,13 @@ function setSummaryErrors (counters) {
         let errorContainer = document.createElement("div");
 
         let errorTitleContainer = document.createElement("div");
+        errorTitleContainer.classList.add("errorTitleContainer");
         let errorTitle = document.createElement("p");
         errorTitleContainer.append(errorTitle);
         errorTitle.innerHTML = counter.name;
 
         let errorQtyContainer = document.createElement("div");
+        errorQtyContainer.classList.add("errorQtyContainer");
         let errorQty = document.createElement("p");
         errorQtyContainer.append(errorQty);
         errorQty.innerHTML = counter.qty;
