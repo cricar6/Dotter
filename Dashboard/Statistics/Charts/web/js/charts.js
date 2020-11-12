@@ -2,8 +2,6 @@ var x_time = ['1', '2', '3', '4', '5', '6'];
 var y_tiempos = ['2465', '5665', '3465', '4565', '500', '6000'];
 var y_errores = ['56', '41', '53', '46', '70', '60'];
 
-var y_errores = ['56', '41', '53', '46', '70', '60'];
-
 Chart.defaults.global.defaultFontFamily = 'Poppins';
 
 new Chart(document.getElementById('myChart').getContext('2d'), {

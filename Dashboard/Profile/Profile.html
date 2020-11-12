@@ -1,10 +1,16 @@
-<h3>profile</h3>
+<div class="profile">
+    <div class="profile__header">
+        <h3>Mi perfil</h3>
+        <img id="userProfilePhoto" src="https://randomuser.me/api/portraits/women/89.jpg" alt="">
+        <h4 id="userProfileName" >Nombre</h4>
+    </div>
+    <div class="profile__footer">
+        <button onclick="logOut()" class="button button--cancel">
+            Cerrar sesión
+        </button>
+    </div>
+</div>
 
-<img id="userProfilePhoto" src="https://randomuser.me/api/portraits/women/89.jpg" alt="">
-<h4 id="userProfileName" >Nombre</h4>
 
-<button onclick="logOut()">
-    Cerrar sesión
-</button>
 
 <script src="../../Dashboard/Profile/web/js/profile.js"></script>
