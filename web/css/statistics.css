@@ -1,5 +1,16 @@
+.statistics-tab {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .statistics-tab .phase-navigator {
-  height: 130px;
+  height: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -17,7 +28,9 @@
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(40, 206, 217, 0)), color-stop(0.01%, rgba(40, 206, 217, 0)), to(rgba(40, 206, 217, 0.7))), rgba(40, 206, 217, 0.3);
   background: linear-gradient(180deg, rgba(40, 206, 217, 0) 0%, rgba(40, 206, 217, 0) 0.01%, rgba(40, 206, 217, 0.7) 100%), rgba(40, 206, 217, 0.3);
   border-radius: 0px 0px 35px 35px;
-  margin-bottom: 75px;
+  margin-bottom: 55px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .statistics-tab .phase-navigator #currentPhase {
@@ -113,17 +126,28 @@
 
 .statistics-tab__phase-container {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  overflow: auto;
 }
 
 .statistics-tab__phase-container .mode-toogler {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 20px 30px;
+  margin: 15px 30px;
 }
 
 .statistics-tab__phase-container .mode-toogler button {
-  padding: 12px 0;
+  padding: 5px 0;
   width: 50%;
   color: #D4E0EF;
   font-weight: 800;
@@ -143,6 +167,41 @@
 
 .statistics-tab__phase-container .mode-toogler button.active {
   background: rgba(40, 206, 217, 0.2);
+  color: #1F3960;
+}
+
+.chart-tab-container .chart-errors-percentage__title {
+  font-family: Poppins;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  color: #1F3960;
+}
+
+.chart-tab-container .chart-container {
+  padding: 15px 30px;
+}
+
+.chart-tab-container .best-result-container {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.08);
+          box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.08);
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 10px 30px;
+}
+
+.chart-tab-container .best-result-container .title-text {
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 14px;
+  color: #5DD6DE;
+}
+
+.chart-tab-container .best-result-container .content-text {
+  font-family: Lato;
+  font-weight: 400;
+  font-size: 20px;
   color: #1F3960;
 }
 /*# sourceMappingURL=statistics.css.map */

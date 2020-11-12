@@ -1,10 +1,22 @@
-<div class="canvas1" class="width: 350px; height: 300px">
-    <canvas id="myChart" width="350" height="300"></canvas>
-
-</div>
-<div class="canvas2" class="width: 360px; height: 240px">
-
-    <canvas id="myBarChart" width="358" height="240"></canvas>
+<div class="chart-tab-container">
+    <div class="chart-container chart-errors-times">
+        <canvas id="myChart"></canvas>
+    </div>
+    <div class="best-result-container">
+        <h3 class="title-text"><span>Mejor tiempo:</span></h3>
+        <p class="content-text"><span id="statistics__best-time">00:00:00</span></p> 
+    </div>
+    <div class="best-result-container">
+        <h3 class="title-text"><span>Menores errores:</span></h3>
+        <p class="content-text"><span id="statistics__best-errors">00:00:00</span></p> 
+    
+    </div>
+    <p class="chart-errors-percentage__title">
+        ¿En qué tipo de pieza falla más?
+    </p>
+    <div class="chart-container chart-errors-percentage">
+        <canvas id="myBarChart"></canvas>
+    </div>
 </div>
 
 <script src="../../Dashboard/Statistics/Charts/web/js/charts.js"></script>

@@ -52,7 +52,7 @@ new Chart(document.getElementById('myChart').getContext('2d'), {
                 id: 'left-axis',
                 display: true,
                 position: 'left',
-                scaleLabel: { display: true, labelString: 'Tiempo de prueba' },
+                scaleLabel: { display: true, labelString: 'Tiempo de prueba (s)' },
                 gridLines: { drawOnChartArea: false },
                 ticks: {
                     display: true //this will remove only the label
@@ -82,16 +82,8 @@ new Chart(document.getElementById('myBarChart').getContext('2d'), {
         datasets: [{
             label: 'Total de errores',
             data: [20, 30, 20],
-            backgroundColor: [
-                'rgba(0, 99, 132, 0.6)',
-                'rgba(30, 99, 132, 0.6)',
-                'rgba(60, 99, 132, 0.6)'
-            ],
-            borderColor: [
-                'rgba(0, 99, 132, 1)',
-                'rgba(30, 99, 132, 1)',
-                'rgba(60, 99, 132, 1)'
-            ],
+            backgroundColor: 'rgb(212, 224, 239)',
+            borderColor: 'rgba(0, 0, 0, 0)',
             borderWidth: 2,
             hoverBorderWidth: 0
         }]
@@ -104,8 +96,12 @@ new Chart(document.getElementById('myBarChart').getContext('2d'), {
                 ticks: {
                     display: true,
                     beginAtZero: true
-                }
-            }]
+                },
+                gridLines: { drawOnChartArea: false }
+            }],
+            xAxes: [{
+                gridLines: { drawOnChartArea: false }
+            }],
         },
         elements: {
             rectangle: {
