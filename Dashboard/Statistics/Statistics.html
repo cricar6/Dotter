@@ -1,15 +1,30 @@
-<h2>Statistics</h2>
 <div class="statistics-tab">
-    <div id="currentPhase">
-        No se ha seleccionado ninguna fase
+    <div class="phase-navigator">
+        <div id="currentPhase">
+            No se ha seleccionado ninguna fase
+        </div>
+
+        <ul class="phase-navigator__menu">
+            <li id="phase1menu">
+                <button onclick="changePhase('1')">1</button>
+                <div class="menu-background"></div>
+            </li>
+            <li id="phase2menu">
+                <button onclick="changePhase('2')">2</button>
+                <div class="menu-background"></div>
+            </li>
+            <li id="phase3menu">
+                <button onclick="changePhase('3')">3</button>
+                <div class="menu-background"></div>
+            </li>
+        </ul>
     </div>
-    <button onclick="changePhase('1')">Phase1</button>
-    <button onclick="changePhase('2')">Phase2</button>
-    <button onclick="changePhase('3')">Phase3</button>
     
     <div class="statistics-tab__phase-container">
-        <button onclick="setChartsScreen()">Estadisticas</button>
-        <button onclick="setSimulationsScreen()">Simulacion</button>
+        <div class="mode-toogler">
+            <button onclick="setChartsScreen()" id="chartsMenu" class="active">Estadisticas</button>
+            <button onclick="setSimulationsScreen()" id="simulationMenu">Simulacion</button>
+        </div>
         <div class="statistics-tab__phase-container__content">
 
         </div>

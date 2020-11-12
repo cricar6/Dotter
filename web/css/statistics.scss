@@ -1,0 +1,125 @@
+$dark-blue: #1F3960;
+$main-color: #5DD6DE;
+
+.statistics-tab {
+    .phase-navigator {
+        height: 130px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        position: relative;
+        background: linear-gradient(180deg, rgba(40, 206, 217, 0) 0%, rgba(40, 206, 217, 0) 0.01%, rgba(40, 206, 217, 0.7) 100%), rgba(40, 206, 217, 0.3);
+        border-radius: 0px 0px 35px 35px;
+        margin-bottom: 75px;
+        #currentPhase {
+            font-family: Poppins;
+            font-weight: 800;
+            font-size: 18px;
+            text-align: center;
+            color: $dark-blue;
+            margin-bottom: 15px;
+        }
+        &__menu {
+            display: flex;
+            flex-direction: row;
+            position: absolute;
+            bottom: -55px;
+            li {
+                list-style: none;
+                border-radius: 0 0 50px 50px;
+                z-index: 3;
+                button {
+                    height: 40px;
+                    width: 40px;
+                    border: 1px solid #D4E0EF;
+                    box-sizing: border-box;
+        
+                    font-family: Poppins;
+                    font-weight: bold;
+                    font-size: 16px;
+        
+                    color: #D4E0EF;
+                    margin: 5px;
+                    margin-top: 10px;
+    
+                    background: white;
+                    border-radius: 50%;
+    
+                }
+                .menu-background {
+                    content: '';
+                    width: 130px;
+                    height: 30px;
+                    left: -40px;
+                    top: 0;
+                    position: absolute;
+                    background: #55D8E1;
+                    z-index: -1;
+                    display: none;
+                }
+                &.active {
+                    background: #55D8E1;
+                    position: relative;
+                    z-index: 2;
+                    button {
+                        background: $main-color;
+                        border-color: white;
+                        color: white;
+                    }
+                    .menu-background {
+                        display: block;
+                    }
+                    &:after,
+                    &:before {
+                        content: '';
+                        width: 40px;
+                        height: 30px;
+                        background: white;
+                        position: absolute;
+                        top: 0;
+                        z-index: 3;
+                    }
+                    &:before {
+                        border-radius: 0px 30px 0px 0px;
+                        left: -40px;
+                    }
+                    &:after {
+                        border-radius: 30px 0px 0px 0px;
+                        right: -40px;
+                    }
+    
+    
+                }
+            }
+        }
+    
+    }
+    &__phase-container {
+        width: 100%;
+        .mode-toogler {
+            display: flex;
+            margin: 20px 30px;
+            button {
+                padding: 12px 0;
+                width: 50%;
+                color: #D4E0EF;
+                font-weight: 800;
+                font-family: Poppins;
+                font-size: 14px;
+                text-align: center;
+                border: 1px solid #D4E0EF;
+            }
+            button:first-child {
+                border-radius: 30px 0 0 30px;
+            }
+            button:last-child {
+                border-radius: 0 30px 30px 0;
+            }
+            button.active {
+                background: rgba(40, 206, 217, 0.2);
+                color: #1F3960;
+            }
+        }
+    }
+}
