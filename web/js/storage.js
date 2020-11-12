@@ -44,6 +44,7 @@ function updateBestResults(userId, phaseId) {
                     window.localStorage.setItem('phase1Data', JSON.stringify(simulations));
                     let phaseData = Object.values(JSON.parse(window.localStorage.getItem('phase1Data')));
                     
+                    console.log(phaseData, "Data de la fase")
                     let bestTime = 0;
                     let bestErrors = 0;
                     phaseData.forEach(phase => {
@@ -74,8 +75,9 @@ function updateBestResults(userId, phaseId) {
                     firebase.database().ref('users/' + userId + '/phase1').update({ bestTime: bestTime });
                     firebase.database().ref('users/' + userId + '/phase1').update({ bestErrors: bestErrors });
     
+                } else {
+                    console.log("No hay simulaciones para la fase 1")
                 }
-
             });
     } else if (phaseId == "2") {
         firebase.database().ref('users/' + userId + '/phase2' + '/simulations')
@@ -117,6 +119,8 @@ function updateBestResults(userId, phaseId) {
     
                 firebase.database().ref('users/' + userId + '/phase2').update({ bestTime: bestTime });
                 firebase.database().ref('users/' + userId + '/phase2').update({ bestErrors: bestErrors });
+            } else {
+                console.log("No hay simulaciones para la fase 2")
             }
             
         });
@@ -160,8 +164,9 @@ function updateBestResults(userId, phaseId) {
     
                 firebase.database().ref('users/' + userId + '/phase3').update({ bestTime: bestTime });
                 firebase.database().ref('users/' + userId + '/phase3').update({ bestErrors: bestErrors });
+            } else {
+                console.log("No hay simulaciones para la fase 3")
             }
-            
         });
     }
 }
