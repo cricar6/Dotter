@@ -1,5 +1,7 @@
 var database = firebase.database();
 
+let currentPhaseDataChart;
+
 function writePhase(userId, phaseData) {
     if (phaseData.name == "Primera etapa") {
         firebase.database().ref('users/' + userId + '/phase1' + '/simulations').push({
@@ -73,7 +75,10 @@ function updateBestResults(userId, phaseId) {
                     });
     
                     firebase.database().ref('users/' + userId + '/phase1').update({ bestTime: bestTime });
+                    window.localStorage.setItem('phase1BestTime', JSON.stringify(bestTime));
+
                     firebase.database().ref('users/' + userId + '/phase1').update({ bestErrors: bestErrors });
+                    window.localStorage.setItem('phase1BestErrors', JSON.stringify(bestErrors));
     
                 } else {
                     console.log("No hay simulaciones para la fase 1")
@@ -118,7 +123,11 @@ function updateBestResults(userId, phaseId) {
                 });
     
                 firebase.database().ref('users/' + userId + '/phase2').update({ bestTime: bestTime });
+                window.localStorage.setItem('phase2BestTime', JSON.stringify(bestTime));
+
                 firebase.database().ref('users/' + userId + '/phase2').update({ bestErrors: bestErrors });
+                window.localStorage.setItem('phase2BestErrors', JSON.stringify(bestErrors));
+
             } else {
                 console.log("No hay simulaciones para la fase 2")
             }
@@ -163,10 +172,16 @@ function updateBestResults(userId, phaseId) {
                 });
     
                 firebase.database().ref('users/' + userId + '/phase3').update({ bestTime: bestTime });
+                window.localStorage.setItem('phase3BestTime', JSON.stringify(bestTime));
+
                 firebase.database().ref('users/' + userId + '/phase3').update({ bestErrors: bestErrors });
+                window.localStorage.setItem('phase3BestErrors', JSON.stringify(bestErrors));
+
             } else {
                 console.log("No hay simulaciones para la fase 3")
             }
         });
     }
 }
+
+let simulationsContainer;

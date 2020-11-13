@@ -5,6 +5,7 @@ $main-color: #5DD6DE;
     height: 100%;
     display: flex;
     flex-direction: column;
+
     .phase-navigator {
         height: 80px;
         display: flex;
@@ -16,6 +17,7 @@ $main-color: #5DD6DE;
         border-radius: 0px 0px 35px 35px;
         margin-bottom: 55px;
         flex-shrink: 0;
+
         #currentPhase {
             font-family: Poppins;
             font-weight: 800;
@@ -24,33 +26,37 @@ $main-color: #5DD6DE;
             color: $dark-blue;
             margin-bottom: 15px;
         }
+
         &__menu {
             display: flex;
             flex-direction: row;
             position: absolute;
             bottom: -55px;
+
             li {
                 list-style: none;
                 border-radius: 0 0 50px 50px;
                 z-index: 3;
+
                 button {
                     height: 40px;
                     width: 40px;
                     border: 1px solid #D4E0EF;
                     box-sizing: border-box;
-        
+
                     font-family: Poppins;
                     font-weight: bold;
                     font-size: 16px;
-        
+
                     color: #D4E0EF;
                     margin: 5px;
                     margin-top: 10px;
-    
+
                     background: white;
                     border-radius: 50%;
-    
+
                 }
+
                 .menu-background {
                     content: '';
                     width: 130px;
@@ -62,18 +68,22 @@ $main-color: #5DD6DE;
                     z-index: -1;
                     display: none;
                 }
+
                 &.active {
                     background: #55D8E1;
                     position: relative;
                     z-index: 2;
+
                     button {
                         background: $main-color;
                         border-color: white;
                         color: white;
                     }
+
                     .menu-background {
                         display: block;
                     }
+
                     &:after,
                     &:before {
                         content: '';
@@ -84,30 +94,35 @@ $main-color: #5DD6DE;
                         top: 0;
                         z-index: 3;
                     }
+
                     &:before {
                         border-radius: 0px 30px 0px 0px;
                         left: -40px;
                     }
+
                     &:after {
                         border-radius: 30px 0px 0px 0px;
                         right: -40px;
                     }
-    
-    
+
+
                 }
             }
         }
-    
+
     }
+
     &__phase-container {
         width: 100%;
         display: flex;
         flex-direction: column;
         flex: 1;
         overflow: auto;
+
         .mode-toogler {
             display: flex;
             margin: 15px 30px;
+
             button {
                 padding: 5px 0;
                 width: 50%;
@@ -118,20 +133,22 @@ $main-color: #5DD6DE;
                 text-align: center;
                 border: 1px solid #D4E0EF;
             }
+
             button:first-child {
                 border-radius: 30px 0 0 30px;
             }
+
             button:last-child {
                 border-radius: 0 30px 30px 0;
             }
+
             button.active {
                 background: rgba(40, 206, 217, 0.2);
                 color: #1F3960;
             }
         }
-        &__content {
 
-        }
+        &__content {}
     }
 }
 
@@ -144,15 +161,18 @@ $main-color: #5DD6DE;
 
         color: $dark-blue;
     }
+
     .chart-container {
-        padding:15px 30px;
+        padding: 15px 30px;
     }
+
     .best-result-container {
         background: #FFFFFF;
         box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.08);
         border-radius: 5px;
         padding: 10px 20px;
         margin: 10px 30px;
+
         .title-text {
             font-family: Poppins;
             font-weight: 500;
@@ -160,6 +180,7 @@ $main-color: #5DD6DE;
 
             color: $main-color;
         }
+
         .content-text {
             font-family: Lato;
             font-weight: 400;
@@ -168,4 +189,13 @@ $main-color: #5DD6DE;
             color: $dark-blue;
         }
     }
+}
+
+.results-simulation {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    background: white;
+    z-index: 10;
+    display: none;
 }

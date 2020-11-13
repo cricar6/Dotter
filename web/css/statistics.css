@@ -204,4 +204,13 @@
   font-size: 20px;
   color: #1F3960;
 }
+
+.results-simulation {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  background: white;
+  z-index: 10;
+  display: none;
+}
 /*# sourceMappingURL=statistics.css.map */
