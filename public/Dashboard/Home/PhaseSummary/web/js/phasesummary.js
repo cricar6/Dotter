@@ -44,11 +44,11 @@ function finishSummary () {
     let phaseData = this.phaseData;
 
     writePhase(userId, phaseData, userName);
-    if (phaseData.name == "Primera etapa") {
+    if (phaseData.name == "Dificultad baja") {
         currentPhase = '1';
-    } else if (phaseData.name == "Segunda etapa") {
+    } else if (phaseData.name == "Dificultad media") {
         currentPhase = '2';
-    } else if (phaseData.name == "Tercera etapa") {
+    } else if (phaseData.name == "Dificultad alta") {
         currentPhase = '3';
     }
 

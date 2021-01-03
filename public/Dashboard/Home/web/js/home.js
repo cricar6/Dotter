@@ -23,7 +23,7 @@ function setPhaseData(currentPhase) {
     switch (currentPhase) {
         case '1':
             this.phaseData = {
-                name: "Primera etapa",
+                name: "Dificultad baja",
                 
                 description: "En esta etapa tendrás tres diferentes tipos de piezas en tu recorrido (Rectas, curvas y bifurcadas). El diámetro de las piezas no variará y recuerda evitar tocar las paredes durante el recorrido. Asegúrate de tener todo correctamente conectado.",
                 image: "./Dashboard/Home/PhaseIntro/web/img/phase-background-1.png",
@@ -39,7 +39,7 @@ function setPhaseData(currentPhase) {
             break;
         case '2':
             this.phaseData = {
-                name: "Segunda etapa",
+                name: "Dificultad media",
                 description: "En esta etapa tendrás cuatro diferentes tipos de piezas en tu recorrido (Rectas, curvas, bifurcadas y en espiral). El diámetro de las piezas variará durante el recorrido aumentando así su dificultad. Por ultimo recuerda evitar tocar las paredes durante el recorrido.",
                 image: "./Dashboard/Home/PhaseIntro/web/img/phase-background-2.png",
                 time: { ms: 0, s: 0, m: 0 },
@@ -55,7 +55,7 @@ function setPhaseData(currentPhase) {
             break;
         case '3':
             this.phaseData = {
-                name: "Tercera etapa",
+                name: "Dificultad alta",
                 description: "En esta etapa tendrás cinco diferentes tipos de piezas en tu recorrido (Rectas, curvas, bifurcadas y en espiral) siendo la quinta la pieza la que simula una patología la cual deberá ser tratada y la que se encontrará al final del recorrido. El diámetro de las piezas variará durante el recorrido aumentando así su dificultad. Por ultimo recuerda evitar tocar las paredes durante el recorrido.",
                 image: "./Dashboard/Home/PhaseIntro/web/img/phase-background-3.png",
                 time: { ms: 0, s: 0, m: 0 },

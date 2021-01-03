@@ -6,7 +6,7 @@ function loadPhaseStatistics () {
     
     switch (currentPhase) {
         case "1":
-            $("#currentPhase").html("Primera etapa")
+            $("#currentPhase").html("Dificultad baja")
             $("#phase1menu").addClass("active");
             $("#phase2menu").removeClass("active");
             $("#phase3menu").removeClass("active");
@@ -16,7 +16,7 @@ function loadPhaseStatistics () {
 
             break;
         case "2":
-            $("#currentPhase").html("Segunda etapa")
+            $("#currentPhase").html("Dificultad media")
             $("#phase2menu").addClass("active");
             $("#phase1menu").removeClass("active");
             $("#phase3menu").removeClass("active");
@@ -25,7 +25,7 @@ function loadPhaseStatistics () {
         
             break;
         case "3":
-            $("#currentPhase").html("Tercera etapa")
+            $("#currentPhase").html("Dificultad alta")
             $("#phase3menu").addClass("active");
             $("#phase2menu").removeClass("active");
             $("#phase1menu").removeClass("active");

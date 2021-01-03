@@ -3,7 +3,7 @@ var database = firebase.database();
 let currentPhaseDataChart;
 
 function writePhase(userId, phaseData, userName) {
-    if (phaseData.name == "Primera etapa") {
+    if (phaseData.name == "Dificultad baja") {
         firebase.database().ref('users/' + userId + '/phase1' + '/simulations').push({
             time: phaseData.time,
             errorCounter: phaseData.errorCounter,
@@ -12,7 +12,7 @@ function writePhase(userId, phaseData, userName) {
             date: firebase.database.ServerValue.TIMESTAMP,
             userName: userName
         });
-    } else if (phaseData.name == "Segunda etapa") {
+    } else if (phaseData.name == "Dificultad media") {
         firebase.database().ref('users/' + userId + '/phase2' + '/simulations').push({
             time: phaseData.time,
             errorCounter: phaseData.errorCounter,
@@ -21,7 +21,7 @@ function writePhase(userId, phaseData, userName) {
             date: firebase.database.ServerValue.TIMESTAMP,
             userName: userName
         });
-    } else if (phaseData.name == "Tercera etapa") {
+    } else if (phaseData.name == "Dificultad alta") {
         firebase.database().ref('users/' + userId + '/phase3' + '/simulations').push({
             time: phaseData.time,
             errorCounter: phaseData.errorCounter,
