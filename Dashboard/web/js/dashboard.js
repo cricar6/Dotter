@@ -23,6 +23,7 @@ function MainTabNavigator(toTab) {
             $("#nav-profile").addClass("active");
             $("#nav-home").removeClass("active");
             $("#nav-statistics").removeClass("active");
+            updateBestResults(user.uid, currentPhase);
             break;
         default:
             break;
