@@ -89,11 +89,10 @@ var arr = {
 	}
 };
 
-function findTime(m, s, ms) {
-    
-}
 
 function startCurrentProfileTop() {
+    // NECESITO CAMBIAR ESTO. OBTENGO ES EL ITEM DE TOOOOODAS LAS PRUEBAS,
+    // Y ESTE TIENE QUE ESTAR ACOMPAÑADO DEL NOMBRE DEL USUARIO
     dataProfile = [
         Object.values(JSON.parse(window.localStorage.getItem('phase1Data'))),
         Object.values(JSON.parse(window.localStorage.getItem('phase2Data'))),
@@ -109,8 +108,22 @@ function startCurrentProfileTop() {
 function getPhaseProfile (dataProfile) {
     //ESTO ES EL ARRAY DE TODOS LOS TEST POR FASE
     console.log(dataProfile)
+    dataProfile.forEach(testData => {
+        //POR CADA ELEMENTO DEL ARRAY, O SEA POR CADA TEST OBTENGO EL TIEMPO Y LOS ERRORES
+        let testTime = findPhaseTestObject(testData).testTime;
+        let testErrors = findPhaseTestObject(testData).testErrors;
+
+        //LO QUE NECESITO HACER ES PUSHEAR TODOS LOS TIEMPOS Y ERRORES EN ARRAYS DISTINTOS
+        //Y LUEGO EJECUTAR LA FUNCION NORMALIZADORA PARA TENER EL PORCENTAJE
+        
+    });
     
-    findTime
+}
+
+
+function findPhaseTestObject(testData) {
+    let testTime = testData.time.m / 600 + testData.time.s / 10 + testData.time.ms;
+    return { testTime: testTime, testErrors: testData.totalErrors}
 }
 
 startCurrentProfileTop();
