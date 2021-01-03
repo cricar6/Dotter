@@ -44,6 +44,8 @@
 
 .profile__header #userProfilePhoto {
   border-radius: 100px;
+  width: 100px;
+  padding-top: 10px;
 }
 
 .profile__header #userProfileName {
@@ -56,5 +58,104 @@
 
 .profile__footer {
   width: 100%;
+}
+
+.rankPhaseContainer {
+  width: 100%;
+  overflow: auto;
+  padding: 30px 0;
+  padding-top: 10px;
+}
+
+.rankPhaseContainer .phaseTitle {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #5DD6DE;
+}
+
+.rankPhaseContainer .rankPhaseContainer {
+  counter-reset: phase-numeration;
+}
+
+.rankPhaseContainer .phaseRank {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px -3px 4px rgba(0, 0, 0, 0.03), 0px 3px 5px rgba(0, 0, 0, 0.08);
+          box-shadow: 0px -3px 4px rgba(0, 0, 0, 0.03), 0px 3px 5px rgba(0, 0, 0, 0.08);
+  border-radius: 5px;
+  padding: 15px 20px;
+  padding-left: 60px;
+}
+
+.rankPhaseContainer .phaseRank:before {
+  content: counter(phase-numeration);
+  counter-increment: phase-numeration;
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-family: Poppins;
+  font-weight: 800;
+  font-size: 25px;
+  line-height: 23px;
+  color: #28CED9;
+}
+
+.rankPhaseContainer .phaseRank .userContainer {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.rankPhaseContainer .phaseRank .userContainer .userName {
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 23px;
+  color: #28CED9;
+}
+
+.rankPhaseContainer .phaseRank .userContainer .userRanking {
+  font-family: Lato;
+  font-weight: 900;
+  font-size: 25px;
+  line-height: 30px;
+  color: #1F3960;
+}
+
+.rankPhaseContainer .phaseRank .dataContainer > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.rankPhaseContainer .phaseRank .dataContainer > div .errorRankTitle,
+.rankPhaseContainer .phaseRank .dataContainer > div .timeRankTitle {
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 12px;
+  color: #28CED9;
+  margin-right: 10px;
+}
+
+.rankPhaseContainer .phaseRank .dataContainer > div .timeRank,
+.rankPhaseContainer .phaseRank .dataContainer > div .errorsRank {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 12px;
+  text-align: right;
+  width: 100%;
+  color: #1F3960;
 }
 /*# sourceMappingURL=profile.css.map */

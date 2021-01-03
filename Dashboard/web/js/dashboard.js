@@ -24,6 +24,7 @@ function MainTabNavigator(toTab) {
             $("#nav-home").removeClass("active");
             $("#nav-statistics").removeClass("active");
             updateBestResults(user.uid, currentPhase);
+            readAllPhases();
             break;
         default:
             break;

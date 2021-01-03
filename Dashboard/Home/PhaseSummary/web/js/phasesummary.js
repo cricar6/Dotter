@@ -40,9 +40,10 @@ function finishSummary () {
     this.phaseData.additionalInput = additionalInfo;
 
     let userId = firebase.auth().currentUser.uid;
+    let userName = firebase.auth().currentUser.displayName;
     let phaseData = this.phaseData;
 
-    writePhase(userId, phaseData);
+    writePhase(userId, phaseData, userName);
     if (phaseData.name == "Primera etapa") {
         currentPhase = '1';
     } else if (phaseData.name == "Segunda etapa") {

@@ -3,6 +3,8 @@ user = firebase.auth().currentUser;
 if (user) {
     $("#userHomeName").html(user.displayName);
     $("#userHomePhoto").attr("src", user.photoURL);
+    $("#userHomePhoto").attr("alt", user.displayName);
+    $("#userHomePhoto").attr("title", user.displayName);
 }
 
 function setPhase(currentPhase) {
@@ -22,15 +24,15 @@ function setPhaseData(currentPhase) {
         case '1':
             this.phaseData = {
                 name: "Primera etapa",
-                description: "Primera etapa proident laboris enim laboris magna deserunt do laborum. Exercitation sunt voluptate ullamco reprehenderit adipisicing ea aliqua.",
+                
+                description: "En esta etapa tendrás tres diferentes tipos de piezas en tu recorrido (Rectas, curvas y bifurcadas). El diámetro de las piezas no variará y recuerda evitar tocar las paredes durante el recorrido. Asegúrate de tener todo correctamente conectado.",
                 image: "./Dashboard/Home/PhaseIntro/web/img/phase-background-1.png",
                 time: { ms: 0, s: 0, m: 0 },
                 errorCounter: 
                 [
-                    { name: "ErrorA", qty: 0 },
-                    { name: "ErrorB", qty: 0 },
-                    { name: "ErrorC", qty: 0 },
-                    { name: "ErrorD", qty: 0 }
+                    { name: "Rectas", qty: 0 },
+                    { name: "Curvas", qty: 0 },
+                    { name: "Bifurcadas", qty: 0 }
                 ],
                 additionalInput: ""
             }
@@ -38,16 +40,15 @@ function setPhaseData(currentPhase) {
         case '2':
             this.phaseData = {
                 name: "Segunda etapa",
-                description: "Segunda etapa proident laboris enim laboris magna deserunt do laborum. Exercitation sunt voluptate ullamco reprehenderit adipisicing ea aliqua.",
+                description: "En esta etapa tendrás cuatro diferentes tipos de piezas en tu recorrido (Rectas, curvas, bifurcadas y en espiral). El diámetro de las piezas variará durante el recorrido aumentando así su dificultad. Por ultimo recuerda evitar tocar las paredes durante el recorrido.",
                 image: "./Dashboard/Home/PhaseIntro/web/img/phase-background-2.png",
                 time: { ms: 0, s: 0, m: 0 },
                 errorCounter: 
                 [
-                    { name: "ErrorA", qty: 0 },
-                    { name: "ErrorB", qty: 0 },
-                    { name: "ErrorC", qty: 0 },
-                    { name: "ErrorD", qty: 0 },
-                    { name: "ErrorE", qty: 0 }
+                    { name: "Rectas", qty: 0 },
+                    { name: "Curvas", qty: 0 },
+                    { name: "Bifurcadas", qty: 0 },
+                    { name: "Espiral", qty: 0 }
                 ],
                 additionalInput: ""
             }
@@ -55,23 +56,16 @@ function setPhaseData(currentPhase) {
         case '3':
             this.phaseData = {
                 name: "Tercera etapa",
-                description: "Tercera etapa proident laboris enim laboris magna deserunt do laborum. Exercitation sunt voluptate ullamco reprehenderit adipisicing ea aliqua.",
+                description: "En esta etapa tendrás cinco diferentes tipos de piezas en tu recorrido (Rectas, curvas, bifurcadas y en espiral) siendo la quinta la pieza la que simula una patología la cual deberá ser tratada y la que se encontrará al final del recorrido. El diámetro de las piezas variará durante el recorrido aumentando así su dificultad. Por ultimo recuerda evitar tocar las paredes durante el recorrido.",
                 image: "./Dashboard/Home/PhaseIntro/web/img/phase-background-3.png",
                 time: { ms: 0, s: 0, m: 0 },
                 errorCounter: 
                 [
-                    { name: "ErrorA", qty: 0 },
-                    { name: "ErrorB", qty: 0 },
-                    { name: "ErrorC", qty: 0 },
-                    { name: "ErrorD", qty: 0 },
-                    { name: "ErrorE", qty: 0 },
-                    { name: "ErrorF", qty: 0 },
-                    { name: "ErrorG", qty: 0 },
-                    { name: "ErrorH", qty: 0 },
-                    { name: "ErrorI", qty: 0 },
-                    { name: "ErrorJ", qty: 0 },
-                    { name: "ErrorK", qty: 0 },
-                    { name: "ErrorL", qty: 0 }
+                    { name: "Rectas", qty: 0 },
+                    { name: "Curvas", qty: 0 },
+                    { name: "Bifurcadas", qty: 0 },
+                    { name: "Espiral", qty: 0 },
+                    { name: "Patología", qty: 0 }
                 ],
                 additionalInput: ""
             }

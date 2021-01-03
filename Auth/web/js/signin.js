@@ -3,30 +3,30 @@
 function asignAvatar(avatarId) {
     switch (avatarId) {
         case "1":
-            signPhotoUrl = "https://randomuser.me/api/portraits/women/89.jpg";
+            signPhotoUrl = "./web/assets/Avatars/avatar1.PNG";
             break;
 
         case "2":
-            signPhotoUrl = "https://randomuser.me/api/portraits/women/38.jpg";
+            signPhotoUrl = "./web/assets/Avatars/avatar2.PNG";
             break;
 
         case "3":
-            signPhotoUrl = "https://randomuser.me/api/portraits/women/53.jpg";
+            signPhotoUrl = "./web/assets/Avatars/avatar3.PNG";
             break;
 
         case "4":
-            signPhotoUrl = "https://randomuser.me/api/portraits/women/66.jpg";
+            signPhotoUrl = "./web/assets/Avatars/avatar4.PNG";
             break;
 
         case "5":
-            signPhotoUrl = "https://randomuser.me/api/portraits/women/7.jpg ";
+            signPhotoUrl = "./web/assets/Avatars/avatar5.PNG";
             break;
 
         case "6":
-            signPhotoUrl = "https://randomuser.me/api/portraits/women/5.jpg";
+            signPhotoUrl = "./web/assets/Avatars/avatar6.PNG";
             break;
         default:
-            signPhotoUrl = "https://randomuser.me/api/portraits/women/89.jpg";
+            signPhotoUrl = "./web/assets/Avatars/avatar1.PNG";
             break;
     }
 }
