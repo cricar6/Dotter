@@ -1,0 +1,34 @@
+<div class="statistics-tab">
+    <div class="phase-navigator">
+        <div id="currentPhase">
+            No se ha seleccionado ninguna fase
+        </div>
+
+        <ul class="phase-navigator__menu">
+            <li id="phase1menu">
+                <button onclick="changePhase('1')">1</button>
+                <div class="menu-background"></div>
+            </li>
+            <li id="phase2menu">
+                <button onclick="changePhase('2')">2</button>
+                <div class="menu-background"></div>
+            </li>
+            <li id="phase3menu">
+                <button onclick="changePhase('3')">3</button>
+                <div class="menu-background"></div>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="statistics-tab__phase-container">
+        <div class="mode-toogler">
+            <button onclick="setChartsScreen()" id="chartsMenu" class="active">Estadisticas</button>
+            <button onclick="setSimulationsScreen()" id="simulationMenu">Simulacion</button>
+        </div>
+        <div class="statistics-tab__phase-container__content">
+
+        </div>
+    </div>
+</div>
+
+<script src="/Dashboard/Statistics/web/js/statistics.js"></script>

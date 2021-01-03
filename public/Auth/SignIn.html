@@ -1,0 +1,56 @@
+<div class="auth signin-auth">
+    <div class="auth__container">
+        <div class="auth__container__content">
+            <div class="logo">
+                <img class="logo__image" src="./web/assets/logo-1.png" name="dotter" alt="">
+            </div>
+            <div class="auth-form">
+                <p>Elige tu Medot</p>
+                <div class="avatar-container">
+                    <button onclick="asignAvatar('1')" class="avatar" style="background-image: url(./web/assets/Avatars/avatar1.PNG);">
+                        
+                    </button>
+                    <button onclick="asignAvatar('2')" class="avatar" style="background-image: url(./web/assets/Avatars/avatar2.PNG);">
+                        
+                    </button>
+                    <button onclick="asignAvatar('3')" class="avatar" style="background-image: url(./web/assets/Avatars/avatar3.PNG);">
+                        
+                    </button>
+                    <button onclick="asignAvatar('4')" class="avatar" style="background-image: url(./web/assets/Avatars/avatar4.PNG);">
+                        
+                    </button>
+                    <button onclick="asignAvatar('5')" class="avatar" style="background-image: url(./web/assets/Avatars/avatar5.PNG);">
+                        
+                    </button>
+                    <button onclick="asignAvatar('6')" class="avatar" style="background-image: url(./web/assets/Avatars/avatar6.PNG);">
+                        
+                    </button>
+                </div>
+                <div class="control input--text">
+                    <input type="text" placeholder="Nombre" name="name" id="signName">
+                    <p class="input--text__label">Nombre</p>
+                </div>
+                <div class="control input--text">
+                    <input type="text" placeholder="Correo electrónico" name="email" id="signEmail">
+                    <p class="input--text__label">Correo electrónico</p>
+                </div>
+                <div class="control input--text">
+                    <input type="password" placeholder="******" name="password" id="signPass">
+                    <p class="input--text__label">Contraseña</p>
+                </div>
+                <div class="error-container" id="loginError"></div>
+                
+                <button onclick="executeSignIn()" type="submit" class="button button--primary">
+                    Registrarse
+                </button>
+                <div class="bottom-note">
+                    <p>Ya tienes cuenta? </p>
+                    <button onclick="passToLogin()">
+                        Inicia sesión
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/Auth/web/js/signin.js"></script>

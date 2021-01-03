@@ -1,0 +1,29 @@
+
+<div class="phase-testing">
+    <div class="phase-testing__header">
+        <div class="phase-testing__header__timer">
+            <p class="content-text"><span id="timerMinutes">00</span>:<span id="timerSeconds">00</span>:<span id="timerMSeconds">00</span></p>
+            <p class="label"><span>Tiempo de prueba</span></p>    
+        </div>
+    </div>
+
+    <div class="phase-testing__errors-container">
+        <h2 class="title-text"><span>Errores en piezas</span></h2>
+        <div class="phase-testing__errors-container__errors-content errors-testing">
+            
+        </div>
+        <div class="actions-container">
+            <button id="phaseTimerToogler" class="button button--disabled">
+                Pausar simulación
+            </button>
+        
+            <button onclick="finishTest()" class="button button--primary">
+                Terminar simulación
+            </button>
+        </div>
+    </div>
+
+
+</div>
+
+<script src="/Dashboard/Home/PhaseTest/web/js/phasetest.js"></script>
