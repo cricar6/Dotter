@@ -25,9 +25,9 @@ let timer = $.timer(function() {
     if (seconds >= 60) {
         minutes++;
         if (minutes < 10) {
-            $('#timerSeconds').html('0' + minutes);
+            $('#timerMinutes').html('0' + minutes);
         } else {
-            $('#timerSeconds').html(minutes);
+            $('#timerMinutes').html(minutes);
         }
         seconds = 0;
     }

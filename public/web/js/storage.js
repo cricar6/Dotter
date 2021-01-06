@@ -53,7 +53,8 @@ function updateBestResults(userId, phaseId) {
                     let bestTime = 0;
                     let bestErrors = 0;
                     phaseData.forEach(phase => {
-                        let phaseTotalTime = (parseInt(phase.time.m) * 600) + parseInt(phase.time.ms) + (parseInt(phase.time.s) * 10);
+                        console.log(parseInt(phase.time.m) * 60, parseInt(phase.time.s) * 10, "atencion aqui")
+                        let phaseTotalTime = (parseInt(phase.time.m) * 60) + parseInt(phase.time.s) +  (parseInt(phase.time.ms) / 10);
 
                         if (bestTime == 0) {
                             bestTime = phaseTotalTime;
