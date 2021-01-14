@@ -16,7 +16,7 @@ let isOnTest = false;
 
 let totalErrors = [];
 
-document.addEventListener('keydown', function (e) {
+document.addEventListener('keyup', function (e) {
     if (isOnTest) {
         switch (e.key) {
             case 'a':
